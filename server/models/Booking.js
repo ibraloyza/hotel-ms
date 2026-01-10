@@ -1,5 +1,5 @@
 import mongoose from "mongoose";
-import User from "./User";
+import user from "./User.js";
 
 
 
@@ -33,3 +33,6 @@ const bookingSchema  = new mongoose.Schema({
     
 
 },{timestamps:true})
+
+const Booking = mongoose.model('booking',bookingSchema);
+export default Booking;
